@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <div class="background">
+    <div class="center-text">
+	<title>Product Photography Brief Builder</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+
+    <h1 class="header">Product Photoshoot Brief Builder</h1>
+   <br>
+
+	<form>
+		<label for="product-name">Product Name</label>
+		<input type="text" id="product-name" name="product-name" required>
+
+        <label for="client-name">Client Name</label>
+		<input type="text" id="client-name" name="client-name" required>
+
+        <label for="client-contact-info">Client Contact Info</label>
+		<input type="text" id="client-contact-info" name="client-contact-info" required>
+
+<br>
+
+		<label for="intended-usage">Intended Usage of Content</label>
+		<select id="intended-usage" name="intended-usage">
+			<option value="">Select an Option</option>
+			<option value="Branding">Branding</option>
+			<option value="Advertising">Advertising</option>
+			<option value="Social Media/Web/Online">Social Media/Web/Online</option>
+			<option value="Print">Print</option>
+		</select>
+		
+		<label for="final-shots">Number of Final Shots Required</label>
+		<input type="number" id="final-shots" name="final-shots" min="1" max="100" required>
+
+		<label for="format">Format of Photos</label>
+		<select id="format" name="format" required>
+			<option value="">Select an Option</option>
+			<option value="PNG">PNG</option>
+			<option value="JPG">JPG</option>
+			<option value="RAW">RAW</option>
+			<option value="Video">Video</option>
+			<option value="GIF">GIF</option>
+		</select>
+		
+		<label for="orientation">Orientation</label>
+		<select id="orientation" name="orientation">
+            <option value="">Select an Option</option>
+			<option value="Landscape">Landscape</option>
+			<option value="Portrait">Portrait</option>
+			<option value="Angled - Rightward">Angled - Rightward</option>
+			<option value="Angled - Leftward">Angled - Leftward</option>
+		</select>
+
+		<label for="lighting">Lighting</label>
+		<select id="lighting" name="lighting">
+			<option value="">Select an Option</option>
+			<option value="Soft">Soft</option>
+			<option value="Harsh">Harsh</option>
+			<option value="Double diffused">Double diffused</option>
+		</select>
+
+        <label for="camera-angles">Camera Angle</label>
+        <select id="camera-angles" name="camera-angles">
+            <option value="">Select an Option</option>
+            <option value="0">0 degrees - front</option>
+            <option value="45">45 degrees</option>
+            <option value="90">90 degrees - object left</option>
+            <option value="180">180 degrees - rear</option>
+            <option value="270">270 degrees - object right</option>
+            <option value="315">315 degrees</option>
+        </select>
+		
+        <label for="camera-perspective">Camera Perspective</label>
+        <select id="camera-perspective" name="camera-perspective">
+            <option value="">Select an Option</option>
+            <option value="in-line">In-line</option>
+            <option value="bottom-up">Bottom-up</option>
+            <option value="top-down">Top-down</option>
+            <option value="slanted-rightwards">Slanted rightwards</option>
+            <option value="slanted-leftwards">Slanted leftwards</option>
+            </select>
+            
+            <label for="lighting-addons">Lighting Add-ons</label>
+            <select id="lighting-addons" name="lighting-addons">
+                <option value="">Select an Option</option>
+                <option value="Reflector">Reflector</option>
+                <option value="Diffuser">Diffuser</option>
+                <option value="Color Gel">Color Gel</option>
+            </select>
+            
+            <label for="behind-the-scenes">Behind the Scenes Footage Required</label>
+            <select id="behind-the-scenes" name="behind-the-scenes">
+                <option value="">Select an Option</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="Optional">Optional</option>
+            </select>
+
+            <div class="button-container">
+                <button type="button" id="generate-pdf">Generate PDF</button>
+              </div>
+<br>
+            </form>
+<br>
+
+       <br>
+        </div>
+
+
+        
+        <script src="main.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.2/pdfmake.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.2/vfs_fonts.js"></script>
+
+
+
+
+            </body>
+        </div>
+            </html>
+        
+            
+
+
