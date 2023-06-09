@@ -23,6 +23,9 @@
 <section class="formcontainer">
 
 	<form>
+        <div class="form-table">
+            <div class="column">
+
 		<label for="product-name">Product Name</label>
 		<input type="text" id="product-name" name="product-name" required>
 
@@ -43,8 +46,7 @@
 			<option value="Print">Print</option>
 		</select>
 		
-		<label for="final-shots">Number of Final Shots Required</label>
-		<input type="number" id="final-shots" name="final-shots" min="1" max="100" required>
+		
 
 		<label for="format">Format of Photos</label>
 		<select id="format" name="format" required>
@@ -66,6 +68,11 @@
 			<option value="24-70mm">24-70mm</option>
             <option value="70-200mm">70-200mm</option>
 		</select>
+
+    </div>
+
+    <div class="column">
+
 		
 		<label for="orientation">Orientation</label>
 		<select id="orientation" name="orientation">
@@ -76,6 +83,7 @@
 			<option value="Angled - Leftward">Angled - Leftward</option>
 		</select>
 
+       
 		<label for="lighting">Lighting</label>
 		<select id="lighting" name="lighting">
 			<option value="">Select an Option</option>
@@ -113,18 +121,17 @@
                 <option value="Color Gel">Color Gel</option>
             </select>
             
-            <label for="behind-the-scenes">Behind the Scenes Footage Required</label>
-            <select id="behind-the-scenes" name="behind-the-scenes">
-                <option value="">Select an Option</option>
-                <option value="Yes">Yes</option>
-                <option value="No">No</option>
-                <option value="Optional">Optional</option>
-            </select>
+           
 
-            <div class="button-container">
-                <button type="button" id="generate-pdf">Generate PDF</button>
-              </div>
+            
 <br>
+</div>
+</div>
+
+<div class="button-container">
+    <button type="button" id="generate-pdf">Generate PDF</button>
+  </div>
+
             </form>
 <br>
 

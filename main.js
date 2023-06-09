@@ -3,7 +3,6 @@ function generatePDF() {
     const productName = document.getElementById('product-name').value;
     const projectName = document.getElementById('project-name').value;
     const intendedUsage = document.getElementById('intended-usage').value;
-    const finalShots = document.getElementById('final-shots').value;
     const format = document.getElementById('format').value;
     const lens = document.getElementById('lens').value;
     const orientation = document.getElementById('orientation').value;
@@ -11,7 +10,6 @@ function generatePDF() {
     const cameraAngles = document.getElementById('camera-angles').value;
     const cameraPerspective = document.getElementById('camera-perspective').value;
     const lightingAddons = document.getElementById('lighting-addons').value;
-    const behindTheScenes = document.getElementById('behind-the-scenes').value;
   
     const documentDefinition = {
         pageSize: {
@@ -35,10 +33,12 @@ function generatePDF() {
             margin: [0, 10, 0, 30]
           },
 
+          
+
+
         { text: 'Product Name: ' + productName },
         { text: 'Project Name: ' + projectName },
         { text: 'Intended Usage: ' + intendedUsage },
-        { text: 'Number of Final Shots Required: ' + finalShots },
         { text: 'Format of Photos: ' + format },
         { text: 'Camera Lens: ' + lens },
         { text: 'Orientation: ' + orientation },
@@ -46,7 +46,6 @@ function generatePDF() {
         { text: 'Camera Angles: ' + cameraAngles },
         { text: 'Camera Perspective: ' + cameraPerspective },
         { text: 'Lighting Add-ons: ' + lightingAddons },
-        { text: 'Behind the Scenes: ' + behindTheScenes },
 
         {
             text: 'Built using Product Photography Brief Builder - An online tool to streamline product photography sessions which breaks down art direction into actionables that are exported as printable PDFs. Final project submission for T&I Spring 2023 by Hamza Iqbal',
