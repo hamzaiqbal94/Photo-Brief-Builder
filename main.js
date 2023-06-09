@@ -1,3 +1,4 @@
+
 function generatePDF() {
 
     const productName = document.getElementById('product-name').value;
