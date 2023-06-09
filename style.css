@@ -47,6 +47,22 @@ h1 {
   box-shadow: 0 0 10px #3853ee;
 }
 
+.abouttextcontainer{
+  background-color: #f2f2f2;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #3853ee;
+  
+}
+
+.instructionstextcontainer{
+  background-color: #f2f2f2;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #3853ee;
+  
+}
+
 .form-table {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -100,6 +116,11 @@ select {
   .button-container {
     justify-content: center;
   }
+ 
+  .form-table {
+    grid-template-columns: 1fr; 
+  }
+
 
   .formcontainer {
     max-width: 800px;
