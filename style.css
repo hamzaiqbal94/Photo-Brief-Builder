@@ -23,6 +23,17 @@ header{
     height: 65px;
 }
 
+h1{
+    font-size: 40px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #5c5c5c;
+}
+
 .formcontainer{
 
 }
@@ -33,12 +44,6 @@ header{
 
 
 
-.background {
-    background-color: rgb(83, 83, 83);
-    margin-left: 400px;
-    margin-right: 400px;
-    border-radius: 30px;
-}
 
 
 .header {
@@ -121,7 +126,7 @@ input[type="checkbox"] {
 
 
 
-  
+
   @media (max-width: 400px) {
 	
 }
@@ -136,14 +141,4 @@ body {
 
 }
 
-.center-text {
-    border: 0px solid rgb(79, 79, 79);
-    border-radius: 30px;
-  }
 
-  .background {
-    background-color: rgb(83, 83, 83);
-    margin-left: 10px;
-    margin-right: 10px;
-    border-radius: 30px;
-}
