@@ -1,11 +1,11 @@
 function generatePDF() {
 
     const productName = document.getElementById('product-name').value;
-    const clientName = document.getElementById('client-name').value;
-    const clientContactInfo = document.getElementById('client-contact-info').value;
+    const projectName = document.getElementById('project-name').value;
     const intendedUsage = document.getElementById('intended-usage').value;
     const finalShots = document.getElementById('final-shots').value;
     const format = document.getElementById('format').value;
+    const lens = document.getElementById('lens').value;
     const orientation = document.getElementById('orientation').value;
     const lighting = document.getElementById('lighting').value;
     const cameraAngles = document.getElementById('camera-angles').value;
@@ -36,11 +36,11 @@ function generatePDF() {
           },
 
         { text: 'Product Name: ' + productName },
-        { text: 'Client Name: ' + clientName },
-        { text: 'Client Contact Info: ' + clientContactInfo },
+        { text: 'Project Name: ' + projectName },
         { text: 'Intended Usage: ' + intendedUsage },
         { text: 'Number of Final Shots Required: ' + finalShots },
         { text: 'Format of Photos: ' + format },
+        { text: 'Camera Lens: ' + lens },
         { text: 'Orientation: ' + orientation },
         { text: 'Lighting: ' + lighting },
         { text: 'Camera Angles: ' + cameraAngles },
