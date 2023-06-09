@@ -20,9 +20,34 @@
     flex: 1;
     width: 40%;
     padding-right: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
+  .column select,
+  .column textarea {
+    width: 80%;
+    box-sizing: border-box;
 
+  }
+
+
+  .column input#product-name,
+  .column input#project-name {
+    width: 80%; 
+  }
+
+  .generate-button {
+    width: 40vw;
+    height: 40px;
+    border-radius: 10px;
+  }
+
+  .column label {
+    text-align: left; 
+    width: 80%; 
+  }
 
 
 body {
