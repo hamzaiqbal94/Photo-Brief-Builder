@@ -22,16 +22,16 @@ header {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 600;
   margin-bottom: 20px;
   padding: 8px 16px;
   border-radius: 20px;
-  background-color: #3853ee;
+  background-color:#540371;
   box-shadow: 0 0 90px #3853ee;
   text-decoration: none;
   color:#f2f2f2;
-  margin: 0 auto;
+  margin: 10 auto;
   max-width: 800px;
  
 
@@ -39,16 +39,18 @@ h1 {
 
 
 h2{
-  color:#626262
+  color:#626262;
+  margin-bottom: 20px;
 }
 
 P{
   color: #626262;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 li{
   color: #626262;
+  font-size: 14px;
 }
 
 .button-container {
@@ -68,11 +70,15 @@ li{
   color: #f2f2f2;
   font-weight: 600;
   margin: 0 10px;
-}
+  font-size: 13px;
+    }
+
+
+
 
 .formcontainer {
   background-color: #f2f2f2;
-  padding: 40px 40px 40px 40px;
+  padding: 20px;
   border-radius: 20px;
   box-shadow: 0 0 490px #3853ee;
   max-width: 800px;
@@ -82,7 +88,7 @@ li{
 
 .abouttextcontainer{
   background-color: #f2f2f2;
-  padding: 40px;
+  padding: 20px;
   border-radius: 20px;
   box-shadow: 0 0 190px #3853ee;
   
@@ -90,10 +96,12 @@ li{
 
 .instructionstextcontainer{
   background-color: #f2f2f2;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  padding-right: 40px;
-  padding-left: 50px;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 30px;
+
   border-radius: 20px;
   box-shadow: 0 0 190px #3853ee;
   
@@ -174,21 +182,24 @@ select {
   grid-template-columns: repeat(1, 1fr);
 }
 
-.button{
-padding: 15px 50px;
-font-size: 22px;
+footer{
+  height: 40px;
 }
 
 
 
+@media (min-width: 500px ) {
 
-@media (min-width: 500px) {
+
+
   header {
     margin-bottom: -20px;
   }
 
+
+
   h1 {
-    font-size: 40px;
+    font-size: 30px;
     margin-bottom: 20px;
     text-align: center;
 
@@ -200,9 +211,13 @@ font-size: 22px;
  
   P{
     color: #626262;
-    font-size: 20px;
+    font-size: 16px;
   }
 
+
+  li{
+    font-size: 16px; 
+  }
 
   .h1container {
     max-width: 800px;
@@ -213,23 +228,37 @@ font-size: 22px;
   .formcontainer {
     max-width: 800px;
     margin: 0 auto;
+    padding: 40px;
   }
 
 
   .abouttextcontainer {
     max-width: 800px;
     margin: 0 auto;
+    padding:40px;
   } 
   
   .instructionstextcontainer {
     max-width: 800px;
     margin: 0 auto;
+      background-color: #f2f2f2;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      padding-right: 40px;
+      padding-left: 50px;
+      border-radius: 20px;
   }
 
   .form-table {
     grid-template-columns: repeat(2, 1fr);
   }
 
+footer{
+  height: 40px;
+}
 
+.button {
+  font-size: 22px;
+}
   
 }
