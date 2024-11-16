@@ -1,3 +1,14 @@
+// Register fonts
+pdfMake.fonts = {
+  Roboto: {
+    normal: 'Roboto-Regular.ttf',
+    bold: 'Roboto-Bold.ttf',
+    italics: 'Roboto-Italic.ttf',
+    bolditalics: 'Roboto-BoldItalic.ttf'
+  }
+};
+
+// Generate PDF function
 function generatePDF() {
   const productName = document.getElementById('product-name').value;
   const projectName = document.getElementById('project-name').value;
@@ -39,27 +50,3 @@ function generatePDF() {
         text: 'Built using Creative Brief Generator - An online tool to streamline product photography sessions which breaks down art direction into actionables that are exported as printable PDFs.',
         style: 'subheader2',
         margin: [0, 10, 0, 30]
-      },
-    ],
-    styles: {
-      header: {
-        fontSize: 18,
-        bold: true,
-        margin: [0, 0, 0, 10]
-      },
-      subheader: {
-        fontSize: 12,
-        margin: [0, 0, 0, 10]
-      },
-      subheader2: {
-        fontSize: 7,
-        margin: [0, 0, 0, 10]
-      }
-    }
-  };
-
-  pdfMake.createPdf(documentDefinition).open();
-}
-
-const generatePDFButton = document.getElementById('generate-pdf');
-generatePDFButton.addEventListener('click', generatePDF);
