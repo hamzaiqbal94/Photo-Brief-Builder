@@ -27,12 +27,6 @@ function generatePDF() {
       },
       { text: 'Product Name: ' + productName },
       { text: 'Project Name: ' + projectName },
-      {
-        canvas: [
-          { type: 'line', x1: 0, y1: 0, x2: 500, y2: 0, lineWidth: 1 }
-        ],
-        margin: [0, 10, 0, 10]
-      },
       { text: 'Intended Usage: ' + intendedUsage },
       { text: 'Format of Photos: ' + format },
       { text: 'Camera Lens: ' + lens },
@@ -41,12 +35,6 @@ function generatePDF() {
       { text: 'Camera Angles: ' + cameraAngles },
       { text: 'Camera Perspective: ' + cameraPerspective },
       { text: 'Lighting Add-ons: ' + lightingAddons },
-      {
-        canvas: [
-          { type: 'line', x1: 0, y1: 0, x2: 500, y2: 0, lineWidth: 1 }
-        ],
-        margin: [0, 10, 0, 10]
-      },
       {
         text: 'Built using Creative Brief Generator - An online tool to streamline product photography sessions which breaks down art direction into actionables that are exported as printable PDFs.',
         style: 'subheader2',
@@ -72,3 +60,6 @@ function generatePDF() {
 
   pdfMake.createPdf(documentDefinition).open();
 }
+
+const generatePDFButton = document.getElementById('generate-pdf');
+generatePDFButton.addEventListener('click', generatePDF);
