@@ -1,201 +1,209 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Creative Brief Generator - Create professional creative briefs for your projects">
+    <title>Creative Brief Generator - Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #0000FF;
+            --primary-hover: #0000cc;
+            --text-primary: #1a1a1a;
+            --text-secondary: #4a4a4a;
+            --charcoal: #36454F;
+            --background: #ffffff;
+            --border-color: #e0e0e0;
+            --shadow-color: rgba(0, 0, 255, 0.08);
+            --spacing-sm: 8px;
+            --spacing-md: 16px;
+            --spacing-lg: 32px;
+            --spacing-xl: 40px;
+            --border-radius: 8px;
+        }
 
-* {
-  margin: 00;
-  padding: 0;
-  box-sizing: border-box;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-body {
-  font-family: 'Space Grotesk', sans-serif;
-  padding: 40px 20px;
-  background-color: #ffffff;
-  color: #1a1a1a;
-  line-height: 1.6;
-}
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            padding: var(--spacing-xl) var(--spacing-md);
+            background-color: var(--background);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
 
-header {
-  text-align: left;
-  margin-bottom: 60px;
-  max-width: 1200px;
-  margin: 0 auto 60px;
-}
+        header {
+            text-align: left;
+            margin: 0 auto var(--spacing-xl);
+            max-width: 1200px;
+            position: relative;
+            margin-top: 1vh;
+        }
 
-h1 {
-  font-size: 64px;
-  font-weight: 600;
-  margin-bottom: 30px;
-  color: #0000FF;
-  line-height: 1.1;
-  letter-spacing: -0.02em;
-  max-width: 800px;
-}
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: var(--spacing-lg);
+        }
 
-h2 {
-  color: #1a1a1a;
-  margin-bottom: 24px;
-  font-size: 32px;
-  font-weight: 500;
-  letter-spacing: -0.01em;
-}
+        .title-section {
+            max-width: 70%;
+        }
 
-p {
-  color: #4a4a4a;
-  font-size: 18px;
-  margin-bottom: 16px;
-  line-height: 1.6;
-}
+        nav {
+            display: flex;
+            gap: var(--spacing-md);
+            align-items: flex-start;
+        }
 
-li {
-  color: #4a4a4a;
-  font-size: 18px;
-  margin-bottom: 8px;
-}
+        h1 {
+            font-size: 9.4em;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+        }
 
-.button-container {
-  padding-top: 32px;
-  display: flex;
-  gap: 16px;
-  margin-bottom: 40px;
-}
+        .subtitle {
+            font-size: 0.4em;
+            color: var(--charcoal);
+            max-width: 800px;
+            line-height: 1.6;
+            margin-bottom: var(--spacing-lg);
+        }
 
-.button {
-  display: inline-block;
-  padding: 16px 32px;
-  border-radius: 8px;
-  background-color: #0000FF;
-  text-decoration: none;
-  color: #ffffff;
-  font-weight: 500;
-  font-size: 16px;
-  transition: all 0.3s ease;
-  border: none;
-  cursor: pointer;
-}
+        .button {
+            text-decoration: none;
+            color: var(--charcoal);
+            font-weight: 500;
+            font-size: 18px;
+            position: relative;
+            transition: color 0.3s ease;
+        }
 
-.button:hover {
-  background-color: #0000cc;
-  transform: translateY(-2px);
-}
+        .button::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--charcoal);
+            transition: width 0.3s ease;
+        }
 
-.formcontainer, 
-.abouttextcontainer, 
-.instructionstextcontainer {
-  background-color: #ffffff;
-  padding: 40px;
-  border-radius: 16px;
-  box-shadow: 0 4px 24px rgba(0, 0, 255, 0.08);
-  max-width: 1200px;
-  margin: 0 auto 40px;
-}
+        .button:hover::after {
+            width: 100%;
+        }
 
-.form-table {
-  display: grid;
-  grid-gap: 32px;
-  margin-bottom: 32px;
-}
+        .form-container {
+            background-color: var(--background);
+            padding: var(--spacing-xl);
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 24px var(--shadow-color);
+            max-width: 1200px;
+            margin: 0 auto var(--spacing-xl);
+            position: relative;
+        }
 
-.column {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
+        .form-table {
+            display: grid;
+            gap: var(--spacing-lg);
+            margin-bottom: var(--spacing-lg);
+        }
 
-label {
-  font-size: 16px;
-  font-weight: 500;
-  color: #1a1a1a;
-}
+        .column {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-sm);
+        }
 
-input[type="text"],
-select {
-  padding: 16px;
-  border-radius: 8px;
-  border: 2px solid #e0e0e0;
-  width: 100%;
-  font-size: 16px;
-  color: #1a1a1a;
-  transition: all 0.3s ease;
-  background-color: #f8f8f8;
-}
+        label {
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--text-primary);
+        }
 
-input[type="text"]:focus,
-select:focus {
-  border-color: #0000FF;
-  outline: none;
-  box-shadow: 0 0 0 4px rgba(0, 0, 255, 0.1);
-}
+        input[type="text"],
+        select {
+            padding: var(--spacing-md);
+            border-radius: var(--border-radius);
+            border: 2px solid var(--border-color);
+            width: 100%;
+            font-size: 16px;
+            color: var(--text-primary);
+            transition: all 0.3s ease;
+            background-color: #f8f8f8;
+        }
 
-.generate-button {
-  font-size: 18px;
-  padding: 16px 32px;
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  font-weight: 500;
-  background-color: #0000FF;
-  color: #ffffff;
-  border: none;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
+        input[type="text"]:focus,
+        select:focus {
+            border-color: var(--primary-color);
+            outline: none;
+            box-shadow: 0 0 0 4px rgba(0, 0, 255, 0.1);
+        }
 
-.generate-button:hover {
-  background-color: #0000cc;
-  transform: translateY(-2px);
-}
+        .generate-button {
+            font-size: clamp(18px, 2vw, 20px);
+            padding: var(--spacing-md) var(--spacing-lg);
+            width: 100%;
+            border-radius: var(--border-radius);
+            font-weight: 500;
+            background-color: var(--primary-color);
+            color: var(--background);
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
 
-footer {
-  height: 80px;
-  padding: 32px 0;
-  text-align: center;
-  color: #4a4a4a;
-}
+        .generate-button:hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-2px);
+        }
 
-/* Responsive Design */
-@media (min-width: 768px) {
-  body {
-    padding: 60px 40px;
-  }
+        .button-container {
+            padding-top: var(--spacing-lg);
+            display: flex;
+            gap: var(--spacing-md);
+            margin-bottom: var(--spacing-xl);
+        }
 
-  h1 {
-    font-size: 80px;
-  }
+        @media (min-width: 768px) {
+            body {
+                padding: 60px 40px;
+            }
 
-  .form-table {
-    grid-template-columns: repeat(2, 1fr);
-  }
+            .form-table {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
 
-  .button {
-    font-size: 18px;
-  }
+        @media (max-width: 767px) {
+            h1 {
+                font-size: 4em;
+            }
+            
+            .title-section {
+                max-width: 100%;
+            }
 
-  .generate-button {
-    font-size: 20px;
-  }
-}
+            .header-content {
+                flex-direction: column;
+                gap: var(--spacing-lg);
+            }
 
-
-::selection {
- 
-  color: #0000FF;
-}
-
-.formcontainer, 
-.abouttextcontainer, 
-.instructionstextcontainer {
-  position: relative;
-  overflow: hidden;
-}
-
-.formcontainer::before, 
-.abouttextcontainer::before, 
-.instructionstextcontainer::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  
-}
+            nav {
+                width: 100%;
+                justify-content: space-between;
+            }
+        }
+    </style>
