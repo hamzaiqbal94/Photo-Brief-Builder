@@ -1,163 +1,193 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Creative Brief Generator - Home</title>
-    <link rel="icon" type="image/x-icon" href="favicon copy.ico">
-	<link rel="stylesheet" type="text/css" href="style.css">
-
+    <title>Creative Brief Generator</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    
-
-    <header> 
-    <section class="h1container">
-        <h1>CREATIVE BRIEF GENERATOR</h1>
-    </section>
-
-        <a href="index.html" class="button">Home</a>
-        <a href="instructions.html" class="button">Instructions</a>
-        <a href="about.html" class="button">About</a>
-
-
-
-    </header>
-   
-<section class="formcontainer">
-
-    
-
-	<form>
-        <div class="form-table">
-            <div class="column">
-
-		<label for="product-name">Product Name</label>
-		<input type="text" id="product-name" name="product-name" required>
-
-        <label for="project-name">Project Name</label>
-		<input type="text" id="project-name" name="project-name" required>
-
-      
-
-
-
-		<label for="intended-usage">Intended Usage of Content</label>
-		<select id="intended-usage" name="intended-usage">
-			<option value="">Select an Option</option>
-			<option value="Branding">Branding</option>
-			<option value="Advertising">Advertising</option>
-			<option value="Social Media/Web/Online">Social Media/Web/Online</option>
-			<option value="Print">Print</option>
-		</select>
-		
-		
-
-		<label for="format">Format of Photos</label>
-		<select id="format" name="format" required>
-			<option value="">Select an Option</option>
-			<option value="PNG">PNG</option>
-			<option value="JPG">JPG</option>
-			<option value="RAW">RAW</option>
-			<option value="Video">Video</option>
-			<option value="GIF">GIF</option>
-		</select>
-
-        <label for="lens">Camera Lens</label>
-		<select id="lens" name="lens" required>
-			<option value="">Select an Option</option>
-			<option value="30mm">30mm</option>
-			<option value="50mm Standard">50mm Standard</option>
-			<option value="50mm Macro">50mm Macro</option>
-			<option value="80mm">80mm</option>
-			<option value="24-70mm">24-70mm</option>
-            <option value="70-200mm">70-200mm</option>
-		</select>
-
-    </div>
-
-    <div class="column">
-
-		
-		<label for="orientation">Orientation</label>
-		<select id="orientation" name="orientation">
-            <option value="">Select an Option</option>
-			<option value="Landscape">Landscape</option>
-			<option value="Portrait">Portrait</option>
-			<option value="Angled - Rightward">Angled - Rightward</option>
-			<option value="Angled - Leftward">Angled - Leftward</option>
-		</select>
-
-       
-		<label for="lighting">Lighting</label>
-		<select id="lighting" name="lighting">
-			<option value="">Select an Option</option>
-			<option value="Soft">Soft</option>
-			<option value="Harsh">Harsh</option>
-			<option value="Double diffused">Double diffused</option>
-		</select>
-
-        <label for="camera-angles">Camera Angle</label>
-        <select id="camera-angles" name="camera-angles">
-            <option value="">Select an Option</option>
-            <option value="0">0 degrees - front</option>
-            <option value="45">45 degrees</option>
-            <option value="90">90 degrees - object left</option>
-            <option value="180">180 degrees - rear</option>
-            <option value="270">270 degrees - object right</option>
-            <option value="315">315 degrees</option>
-        </select>
-		
-        <label for="camera-perspective">Camera Perspective</label>
-        <select id="camera-perspective" name="camera-perspective">
-            <option value="">Select an Option</option>
-            <option value="in-line">In-line</option>
-            <option value="bottom-up">Bottom-up</option>
-            <option value="top-down">Top-down</option>
-            <option value="slanted-rightwards">Slanted rightwards</option>
-            <option value="slanted-leftwards">Slanted leftwards</option>
-            </select>
-            
-            <label for="lighting-addons">Lighting Add-ons</label>
-            <select id="lighting-addons" name="lighting-addons">
-                <option value="">Select an Option</option>
-                <option value="Reflector">Reflector</option>
-                <option value="Diffuser">Diffuser</option>
-                <option value="Color Gel">Color Gel</option>
-            </select>
-            
-           
-
-            
-<br>
-</div>
-</div>
-
-<div class="button-container">
-    <button class="generate-button" type="button" id="generate-pdf">Generate Creative Brief</button>
-  </div>
-
-            </form>
-<br>
-
-       <br>
-        </div>
-
+    <main>
+        <!-- First Section -->
+        <section class="section hero">
+            <h1>Creative Brief Generator</h1>
         </section>
-   
-        
-        <script src="main.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.2/pdfmake.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.2/vfs_fonts.js"></script>
 
-<footer>
+        <!-- Second Section -->
+        <section class="section cards">
+            <div class="container">
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-image"></div>
+                        <div class="card-content">
+                            <h2>Card Heading 1</h2>
+                            <p>This is a subheading for card 1.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image"></div>
+                        <div class="card-content">
+                            <h2>Card Heading 2</h2>
+                            <p>This is a subheading for card 2.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image"></div>
+                        <div class="card-content">
+                            <h2>Card Heading 3</h2>
+                            <p>This is a subheading for card 3.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-</footer>
-            </body>
-        </div>
-            </html>
-        
-            
+        <!-- Third Section -->
+        <section class="section form">
+            <div class="container">
+                <form id="creative-brief-form">
+                    <div class="form-grid">
+                        <div class="form-column">
+                            <div class="form-group">
+                                <label for="product-name">Product Name</label>
+                                <input type="text" id="product-name" name="product-name" placeholder="Enter product name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="project-name">Project Name</label>
+                                <input type="text" id="project-name" name="project-name" placeholder="Enter project name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="intended-usage">Intended Usage of Content</label>
+                                <select id="intended-usage" name="intended-usage" required>
+                                    <option value="">Select an option</option>
+                                    <option value="branding">Branding</option>
+                                    <option value="advertising">Advertising</option>
+                                    <option value="social-media">Social Media/Web/Online</option>
+                                    <option value="print">Print</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="format">Format of Photos</label>
+                                <select id="format" name="format" required>
+                                    <option value="">Select an option</option>
+                                    <option value="png">PNG</option>
+                                    <option value="jpg">JPG</option>
+                                    <option value="raw">RAW</option>
+                                    <option value="video">Video</option>
+                                    <option value="gif">GIF</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="lens">Camera Lens</label>
+                                <select id="lens" name="lens" required>
+                                    <option value="">Select an option</option>
+                                    <option value="30mm">30mm</option>
+                                    <option value="50mm-standard">50mm Standard</option>
+                                    <option value="50mm-macro">50mm Macro</option>
+                                    <option value="80mm">80mm</option>
+                                    <option value="24-70mm">24-70mm</option>
+                                    <option value="70-200mm">70-200mm</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-column">
+                            <div class="form-group">
+                                <label for="orientation">Orientation</label>
+                                <select id="orientation" name="orientation" required>
+                                    <option value="">Select an option</option>
+                                    <option value="landscape">Landscape</option>
+                                    <option value="portrait">Portrait</option>
+                                    <option value="angled-right">Angled - Rightward</option>
+                                    <option value="angled-left">Angled - Leftward</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="lighting">Lighting</label>
+                                <select id="lighting" name="lighting" required>
+                                    <option value="">Select an option</option>
+                                    <option value="soft">Soft</option>
+                                    <option value="harsh">Harsh</option>
+                                    <option value="double-diffused">Double diffused</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="camera-angles">Camera Angle</label>
+                                <select id="camera-angles" name="camera-angles" required>
+                                    <option value="">Select an option</option>
+                                    <option value="0">0 degrees - front</option>
+                                    <option value="45">45 degrees</option>
+                                    <option value="90">90 degrees - object left</option>
+                                    <option value="180">180 degrees - rear</option>
+                                    <option value="270">270 degrees - object right</option>
+                                    <option value="315">315 degrees</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="camera-perspective">Camera Perspective</label>
+                                <select id="camera-perspective" name="camera-perspective" required>
+                                    <option value="">Select an option</option>
+                                    <option value="in-line">In-line</option>
+                                    <option value="bottom-up">Bottom-up</option>
+                                    <option value="top-down">Top-down</option>
+                                    <option value="slanted-rightwards">Slanted rightwards</option>
+                                    <option value="slanted-leftwards">Slanted leftwards</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="lighting-addons">Lighting Add-ons</label>
+                                <select id="lighting-addons" name="lighting-addons" required>
+                                    <option value="">Select an option</option>
+                                    <option value="reflector">Reflector</option>
+                                    <option value="diffuser">Diffuser</option>
+                                    <option value="color-gel">Color Gel</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="submit-button">Generate Creative Brief</button>
+                </form>
+            </div>
+        </section>
 
+        <!-- Fourth Section -->
+        <section class="section faq">
+            <div class="container">
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <button id="accordion-button-1" aria-expanded="false">
+                            <span class="accordion-title">What is a Creative Brief?</span>
+                            <span class="icon" aria-hidden="true"></span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>A Creative Brief is a document that outlines the strategy for a creative project. It helps align the client and the creative team on the project's goals, target audience, key messages, and other crucial details.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button id="accordion-button-2" aria-expanded="false">
+                            <span class="accordion-title">How does the Creative Brief Generator work?</span>
+                            <span class="icon" aria-hidden="true"></span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Our Creative Brief Generator uses the information you provide in the form to create a comprehensive brief. It takes into account various factors such as product details, intended usage, and specific photography requirements to generate a tailored document.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button id="accordion-button-3" aria-expanded="false">
+                            <span class="accordion-title">Can I customize the generated Creative Brief?</span>
+                            <span class="icon" aria-hidden="true"></span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Yes, the generated Creative Brief serves as a starting point. You can further customize and refine the document based on your specific needs and any additional information you want to include.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-footer">
+                    <p>Ready to streamline your creative process?</p>
+                    <p>Start generating your Creative Brief today and bring your vision to life.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
