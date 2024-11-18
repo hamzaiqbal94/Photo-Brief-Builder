@@ -63,29 +63,3 @@ function generatePDF() {
 
 const generatePDFButton = document.getElementById('generate-pdf');
 generatePDFButton.addEventListener('click', generatePDF);
-
-
-
-
-document.addEventListener('DOMContentLoaded', (event) => {
-    const accordionItems = document.querySelectorAll('.accordion-item');
-
-    accordionItems.forEach((item) => {
-        const button = item.querySelector('button');
-        button.addEventListener('click', () => {
-            const isActive = item.classList.contains('active');
-            
-            // Close all accordion items
-            accordionItems.forEach((accordionItem) => {
-                accordionItem.classList.remove('active');
-                accordionItem.querySelector('button').setAttribute('aria-expanded', 'false');
-            });
-
-            // If the clicked item wasn't active, open it
-            if (!isActive) {
-                item.classList.add('active');
-                button.setAttribute('aria-expanded', 'true');
-            }
-        });
-    });
-});
