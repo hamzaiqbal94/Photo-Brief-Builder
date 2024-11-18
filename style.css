@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
 
 * {
   margin: 00;
@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   padding: 40px 20px;
   background-color: #ffffff;
   color: #1a1a1a;
@@ -25,14 +25,14 @@ h1 {
   font-size: 64px;
   font-weight: 600;
   margin-bottom: 30px;
-  color: #0000FF;
+  color: #000000;
   line-height: 1.1;
   letter-spacing: -0.02em;
   max-width: 800px;
 }
 
 h2 {
-  color: #1a1a1a;
+  color: #000000;
   margin-bottom: 24px;
   font-size: 32px;
   font-weight: 500;
@@ -63,7 +63,7 @@ li {
   display: inline-block;
   padding: 16px 32px;
   border-radius: 8px;
-  background-color: #0000FF;
+  background-color: #000000;
   text-decoration: none;
   color: #ffffff;
   font-weight: 500;
@@ -74,7 +74,7 @@ li {
 }
 
 .button:hover {
-  background-color: #0000cc;
+  background-color: #404040;
   transform: translateY(-2px);
 }
 
@@ -121,7 +121,7 @@ select {
 
 input[type="text"]:focus,
 select:focus {
-  border-color: #0000FF;
+  border-color: #363636;
   outline: none;
   box-shadow: 0 0 0 4px rgba(0, 0, 255, 0.1);
 }
@@ -133,7 +133,7 @@ select:focus {
   height: auto;
   border-radius: 8px;
   font-weight: 500;
-  background-color: #0000FF;
+  background-color: #000000;
   color: #ffffff;
   border: none;
   cursor: pointer;
@@ -141,7 +141,7 @@ select:focus {
 }
 
 .generate-button:hover {
-  background-color: #0000cc;
+  background-color: #000000;
   transform: translateY(-2px);
 }
 
